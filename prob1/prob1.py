@@ -6,10 +6,11 @@ Usage::
 import argparse
 
 
-
 def _parse_args():
     parser = argparse.ArgumentParser("Problem 1")
-    parser.add_argument('--elf-file', '-f', help='Path of the file with the elf calories.')
+    parser.add_argument(
+        "--elf-file", "-f", help="Path of the file with the elf calories."
+    )
     return parser.parse_args()
 
 
@@ -30,4 +31,3 @@ def find_max_calories(elf_file: str) -> int:
 if __name__ == "__main__":
     max_cal = find_max_calories(elf_file=_parse_args().elf_file)
     print(f"Maximum calories: {max_cal:,}")
-    
