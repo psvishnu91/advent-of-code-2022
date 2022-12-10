@@ -1,7 +1,7 @@
 """Advent of code 2022 problem 1 solution
 
 Usage::
-    python prob1.py --elf-file elf-calories.txt
+    python day1/prob1.py --elf-file day1/elf-calories.txt
 """
 import argparse
 
