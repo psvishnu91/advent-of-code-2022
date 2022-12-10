@@ -53,9 +53,6 @@ def _to_priority(item: str) -> int:
 def compute_badge_priority(input_file: str) -> int:
     score = 0
     group = []
-    # with open(input_fl) as fl:
-    #     for ln in fl:
-    #         ln.strip("\n")
     for i, ln in enumerate(iter_file(fl=input_file), start=1):
         if i % 3 == 0:
             common = list(group[0] & group[1] & set(ln))[0]
